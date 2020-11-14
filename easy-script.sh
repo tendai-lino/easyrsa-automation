@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#https://github.com/tendai-lino/easyrsa-automation/blob/main/easy-script.sh
+#git clone https://github.com/tendai-lino/easyrsa-automation.git
 # Copyright (c) 2020 Tendai-lino. Released under the MIT License
 case $1 in
 install)
