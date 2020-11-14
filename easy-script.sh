@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# https://github.com
+#https://github.com/tendai-lino/easyrsa-automation.git
 # Copyright (c) 2020 Tendai-lino. Released under the MIT License
 case $1 in
 install)
