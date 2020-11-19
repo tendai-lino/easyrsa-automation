@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#git clone https://github.com/tendai-lino/easyrsa-automation.git
 # https://github.com
 # Copyright (c) 2020 Tendai-lino. Released under the MIT License
 case $1 in
