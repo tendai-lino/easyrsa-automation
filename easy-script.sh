@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#git clone https://github.com/tendai-lino/easyrsa-automation.git
+# https://github.com
 # Copyright (c) 2020 Tendai-lino. Released under the MIT License
 case $1 in
 install)
@@ -38,7 +38,19 @@ read varname
 aws acm import-certificate --certificate fileb://vpncerts/server.crt --private-key fileb://vpncerts/server.key --certificate-chain fileb://vpncerts/ca.crt --region $varname
 
 ;;
+revoke)
+
+echo Enter username to revoke
+read varname
+(cd /home/$USER/easy-rsa/easyrsa3/ && ./easyrsa revoke $varname)
+;;
+gen-crl)
+
+(cd /home/$USER/easy-rsa/easyrsa3/ && ./easyrsa gen-crl)
+
+
+;;
 *)
-echo usage : ./easy-script options: install ,adduser ,import-acm
+echo usage : ./easy-script options: install ,adduser ,import-acm,revoke,gen-crl
 ;;
 esac
